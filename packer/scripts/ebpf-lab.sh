@@ -51,6 +51,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 make -j8
 make install
 
-# Prepare eBPF lab samples
+# Prepare eBPF lab with samples
 hostnamectl hostname ebpf-lab
+cd $HOME
 git clone https://github.com/in0rdr/ebpf-lab.git

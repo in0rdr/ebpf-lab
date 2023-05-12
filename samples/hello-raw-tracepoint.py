@@ -29,6 +29,7 @@ BPF_PROG_ARRAY(syscall, 300);
 // https://filippo.io/linux-syscall-table
 
 // https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md#7-raw-tracepoints
+// https://github.com/torvalds/linux/blob/master/include/trace/events/syscalls.h
 RAW_TRACEPOINT_PROBE(sys_enter) {
     // printf() to the common trace_pipe (/sys/kernel/debug/tracing/trace_pipe)
     // https://github.com/iovisor/bcc/blob/master/docs/reference_guide.md#1-bpf_trace_printk
