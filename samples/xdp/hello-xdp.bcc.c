@@ -14,7 +14,8 @@
 SEC("xdp")
 
 int hello_xdp(struct xdp_md *ctx) {
-  // libpf version of BCCs bpf_trace_printk()
+  // helper macro to print out debug messages, wrapper for bpf_trace_printk()
+  // /usr/include/bpf/bpf_helpers.h
   bpf_printk("received packet");
   // XDP_PASS      : let the packet pass
   // XDP_DROP      : you shall not pass
