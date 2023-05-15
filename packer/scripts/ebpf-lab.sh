@@ -42,7 +42,8 @@ cd ../docs; make install
 # https://github.com/iovisor/bpftrace/blob/master/INSTALL.md
 cd $HOME
 dnf install -y bcc-devel systemtap-sdt-devel binutils-devel libbpf-devel vim-common \
-               libpcap-devel gtest-devel gmock-devel cereal-devel asciidoctor dwarves
+               libpcap-devel gtest-devel gmock-devel cereal-devel asciidoctor dwarves \
+               elfutils-devel
 git clone https://github.com/iovisor/bpftrace --recurse-submodules
 cd bpftrace
 mkdir build; cd build
