@@ -4,7 +4,7 @@ Rice: https://github.com/lizrice/learning-ebpf
 
 ## Lab Environment
 A packer configuration was created in the `packer` folder to build and
-configure a Centos 8 stream VM with:
+configure a Centos 9 stream VM with:
 * bcc (https://github.com/iovisor/bcc)
 * bpftool (https://github.com/libbpf/bpftool)
 * bpftrace (https://github.com/iovisor/bpftrace)
